@@ -46,7 +46,7 @@ body {
   left: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .coverContainer:hover .opacityLayer {
@@ -65,7 +65,6 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.5 ease;
 }
 
 .iconContainer:hover {
@@ -85,27 +84,36 @@ body {
 }
 
 .playContainer {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .playButton {
-  height: 63px;
-  width: 63px;
+  height: 75px;
+  width: 75px;
   transition: 0.2s;
-  fill-opacity: 70%;
   filter: invert(93%) sepia(93%) saturate(28%) hue-rotate(21deg) brightness(105%) contrast(108%);
   
 }
 
-.playButton:hover {
-  height: 66px;
-  width: 66px;
+.playOverlay {
+  margin-left: -69px;
+  height: 65px;
+  width: 65px;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: block;
 }
-/* red level!
-playbutton has extra grey opacity/darker than other icons, no change on hover */
+  
+.playButton:hover {
+  height: 78px;
+  width: 78px;
+}
 
 /* Album title */
 .title {
@@ -141,6 +149,3 @@ playbutton has extra grey opacity/darker than other icons, no change on hover */
 }
 
 a {color:#a0a0a0}
-
-
-

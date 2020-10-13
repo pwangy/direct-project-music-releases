@@ -9,7 +9,8 @@ export const Albums = (props) => {
                 <img src="/icons/heart.svg" alt="heart icon" className="heartIcon"></img>
                 
                 <div className="playContainer">
-                <img src="/icons/play.svg" alt="play button" className="playButton"></img>
+                  <img src="/icons/play.svg" alt="play button" className="playButton"></img>
+                  <div className="playOverlay"></div>
                 </div>
                 
                 <img src="/icons/dots.svg" alt="ellipsis icon" className="ellipsisIcon"></img>
