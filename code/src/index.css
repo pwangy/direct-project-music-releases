@@ -3,74 +3,45 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: #000;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
 
+/* Section header */
 .header {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
+  float: left;
 }
 
 
-/* Album title */
-
-.title {
+/* Album art */
+.coverContainer {
+  margin-top: 40px;
   width: 300px;
+  height: 300px;
+  left: 0;
+  position: relative;
 }
-
-.title a {
-  text-decoration: none;
-}
-
-.title:hover {
-  text-decoration: underline;
-}
-
-/* Artist */
-
-.artists {
-  color: #a0a0a0;
-}
-
-.artists a {
-  text-decoration: none;
-}
-
-.artists:hover {
-  text-decoration: underline;
-}
-
-/* Cover album */
 
 .albumArt {
   height: 300px;
 }
 
-.coverContainer {
-  width: 300px;
-  height: 300px;
-  position: relative;
-}
-
 .opacityLayer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
   width: 100%;
   height: 100%;
+  top: 35px;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
 }
 
 .coverContainer:hover .opacityLayer {
@@ -78,22 +49,16 @@ body {
   display: block;
 }
 
-/* Icons on hover */
-
+/* Album icons on hover */
 .iconContainer {
   width: 300px;
   height: 300px;
+  top: 0;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  position: absolute;
   justify-content: center;
   align-items: center;
-  top: 0px;
-  
-}
-
-.iconContainer img {
-  
 }
 
 .heartIcon {
@@ -122,5 +87,32 @@ body {
 .playButton:hover {
   height: 66px;
   width: 66px;
-  
+}
+
+
+/* Album title */
+.title {
+  width: 300px;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+
+/* Artist */
+.artists {
+  color: #a0a0a0;
+}
+
+.artists a {
+  text-decoration: none;
+}
+
+.artists:hover {
+  text-decoration: underline;
 }
