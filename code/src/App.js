@@ -26,9 +26,7 @@ export const App = () => {
             )}
           </div>
         )
-      })}
-
-      
+      })}      
       </section>
     </div>
   )

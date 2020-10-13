@@ -16,7 +16,7 @@ body {
 
 /* Section header */
 .sectionContainer {
-  /* background: turquoise; */
+  background: turquoise;
 }
 
 .header {
@@ -33,6 +33,7 @@ body {
 }
 
 .albumContainer {
+  padding-bottom: 30px;
   display: flex;
   flex-flow: column nowrap;
   background: pink;
@@ -45,7 +46,6 @@ body {
   height: 300px;
   left: 0;
   position: relative;
-  background: green;
 }
 
 .albumArt {
@@ -131,12 +131,14 @@ body {
 .title {
   margin: 6px 0;
   width: 300px;
+  color: #fff;
   font-weight: 700;
-}
-
-.title a {
   text-decoration: none;
 }
+
+/* a {
+  color:#a0a0a0
+} */
 
 .title:hover {
   text-decoration: underline;
@@ -144,24 +146,21 @@ body {
 
 /* Artist */
 .artists {
-  margin: 6px 0;
+  margin: 0;
   width: fit-content;
   /* width: 300px; */
   font-weight: 700;
   color: #a0a0a0;
-  background: green;
-}
-
-.artists a {
   text-decoration: none;
+  background: green;
 }
 
 .artists:hover {
   color: #fff;
+  font-weight: 700;
   text-decoration: underline;
 }
 
-a {color:#a0a0a0}
 
 /* figure out how to get the artist names to wrap */
 .artistFlex {
@@ -192,7 +191,7 @@ a {color:#a0a0a0}
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    /* background: lightgoldenrodyellow; */
+    background: lightgoldenrodyellow;
   }
 }
 
@@ -201,4 +200,5 @@ a {color:#a0a0a0}
   .sectionContainer {
     width: 1240px;
   }
+  /* fix space between issue for cases when there are only 2 or 3 on the bottom row. */
 }
