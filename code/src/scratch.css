@@ -150,18 +150,3 @@ body {
 
 a {color:#a0a0a0}
 
-
-/* Media queries */
-@media (min-width: 768px) { 
-  body {
-    flex-flow: row wrap;
-    
-  }
-
-}
-
-/* Desktop */
-@media (min-width: 900px) {
-
-
-}
