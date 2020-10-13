@@ -139,5 +139,6 @@ playbutton has extra grey opacity/darker than other icons, no change on hover */
 }
 
 .artists:hover {
+  color: #fff;
   text-decoration: underline;
 }
