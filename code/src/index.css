@@ -12,7 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* Section header */
 .header {
   margin-top: 16px;
@@ -116,7 +115,6 @@ body {
   width: 78px;
 }
 
-
 /* Album title */
 .title {
   margin: 6px 0;
@@ -132,7 +130,6 @@ body {
 .title:hover {
   text-decoration: underline;
 }
-
 
 /* Artist */
 .artists {
@@ -151,6 +148,4 @@ body {
   text-decoration: underline;
 }
 
-
-/* Media queries */
-@media 
+a {color:#a0a0a0}

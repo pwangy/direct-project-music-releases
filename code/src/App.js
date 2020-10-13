@@ -15,8 +15,8 @@ export const App = () => {
         return (
           <div className='albumContainer'>
             <Albums key={album.id} url={album.images[0].url} name={album.name} />
-            <ReleaseTitle key={album.name} albumName={album.name} />
-            { album.artists.map((sub, subindex) => <Artists key={subindex} artist={sub.name} />
+            <ReleaseTitle key={album.name} albumName={album.name} albumURL={album.external_urls.spotify} />
+            { album.artists.map((sub, subindex) => <Artists key={subindex} artist={sub.name} artistURL={sub.external_urls.spotify}/>
             )}
           </div>
         )
