@@ -1,11 +1,8 @@
 import React from 'react'
 
-
 export const Artists = (props) => {
-
-   return <div>
-            <p>{props.artist}</p> 
-            <p>{props.albumName}</p> 
-        </div>
-}
-
+   return (
+    <div>
+        <p className='artists'>{props.artist}</p> 
+    </div>
+   )}
