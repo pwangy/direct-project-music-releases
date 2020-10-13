@@ -12,7 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* Section header */
 .header {
   margin-top: 16px;
@@ -108,7 +107,6 @@ body {
 /* red level!
 playbutton has extra grey opacity/darker than other icons, no change on hover */
 
-
 /* Album title */
 .title {
   margin: 6px 0;
@@ -124,7 +122,6 @@ playbutton has extra grey opacity/darker than other icons, no change on hover */
 .title:hover {
   text-decoration: underline;
 }
-
 
 /* Artist */
 .artists {
@@ -142,3 +139,8 @@ playbutton has extra grey opacity/darker than other icons, no change on hover */
   color: #fff;
   text-decoration: underline;
 }
+
+a {color:#a0a0a0}
+
+
+
