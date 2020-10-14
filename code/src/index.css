@@ -15,10 +15,6 @@ body {
 }
 
 /* Section header */
-/* .sectionContainer {
-  background: turquoise;
-} */
-
 .header {
   margin-top: 16px;
   font-size: 21px;
@@ -36,7 +32,6 @@ body {
   padding-bottom: 30px;
   display: flex;
   flex-flow: column nowrap;
-  /* background: pink; */
 }
 
 /* Album art */
@@ -149,7 +144,6 @@ body {
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  /* background: seagreen; */
 }
 
 .artists {
@@ -169,10 +163,6 @@ body {
 
 /* Media queries */
 @media (min-width: 768px) {  
-  /* .header {
-    margin-bottom: 20px; 
-  } */
-
   .sectionContainer {
     width: 620px;
     display: flex;
@@ -182,15 +172,24 @@ body {
   .rows {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    /* background: lightgoldenrodyellow; */
+    gap: 0 20px;
+  }
+
+  .albumContainer {
+    align-self: flex-start;
+  }
+}
+
+/* Large tablet */
+@media (min-width: 992px) {
+  .sectionContainer {
+    width: 940px;
   }
 }
 
 /* Desktop */
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .sectionContainer {
-    width: 1240px;
+    width: 1260px;
   }
-  /* fix space between issue for cases when there are only 2 or 3 on the bottom row. */
 }
