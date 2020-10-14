@@ -15,9 +15,9 @@ body {
 }
 
 /* Section header */
-.sectionContainer {
+/* .sectionContainer {
   background: turquoise;
-}
+} */
 
 .header {
   margin-top: 16px;
@@ -36,7 +36,7 @@ body {
   padding-bottom: 30px;
   display: flex;
   flex-flow: column nowrap;
-  background: pink;
+  /* background: pink; */
 }
 
 /* Album art */
@@ -136,44 +136,36 @@ body {
   text-decoration: none;
 }
 
-/* a {
-  color:#a0a0a0
-} */
-
 .title:hover {
   text-decoration: underline;
 }
 
 /* Artist */
-.artists {
-  margin: 0;
-  width: fit-content;
-  /* width: 300px; */
-  font-weight: 700;
-  color: #a0a0a0;
-  text-decoration: none;
-  background: green;
-}
-
-.artists:hover {
-  color: #fff;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-
-/* figure out how to get the artist names to wrap */
-.artistFlex {
-  /* width: fit-content; */
-  /* max-width: 300px; */
+.artistContainer {
+  max-width: 300px;
   text-align: left;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  background: #4d4d4d;
+  /* background: seagreen; */
 }
+
+.artists {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  font-weight: 700;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artists:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 
 /* Media queries */
 @media (min-width: 768px) {  
@@ -191,7 +183,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background: lightgoldenrodyellow;
+    /* background: lightgoldenrodyellow; */
   }
 }
 
