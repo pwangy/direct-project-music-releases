@@ -17,6 +17,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 ## Core Tech
 - JavaScript
 - React
+- JSX
 
 
 ## Completed Requirements
