@@ -160,6 +160,10 @@ body {
   text-decoration: underline;
 }
 
+.artists + .artists::before {
+  white-space: pre;
+  content: ", ";
+}
 
 /* Media queries */
 @media (min-width: 768px) {  
