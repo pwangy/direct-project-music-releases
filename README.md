@@ -44,8 +44,8 @@ Describe how you approached to problem, and what tools and techniques you used t
     - *Y2K, bbno$ & Enrique Iglesias* -->
 - Lower the opacity of the play button icons and then when you hover over the play button, it should have full opacity
 
-⚫  Black Level (Advanced Goals)
-<!-- - We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.
+<!-- ⚫  Black Level (Advanced Goals)
+- We've provided another API response which includes a list of popular playlists. Use this, along with some new components to render a list of playlists in a sidebar.
 - Sort the albums from the singles and create two different sections on your site -->
 <!-- - Incorporate more information from the API response to make your site richer -->
 
