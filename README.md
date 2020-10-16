@@ -52,4 +52,4 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 
 ## View it live
-Netlify link
+https://goofy-haibt-943dc2.netlify.app/
