@@ -1,47 +1,16 @@
-scratch.js
+// artists.js
+// import React from 'react'
 
-//   a foreach mapping function to get url and artist name
-
-const object1 = {
-  a: 'somestring',
-  b: 42
-};
-
-for (const [key, value] of Object.entries(object1)) {
-  console.log(`${key}: ${value}`);
-}
-
-// expected output:
-// "a: somestring"
-// "b: 42"
-// order is not guaranteed
-
-then we need to print the artist w/ corresponding url and then add logic for , or & 
-
-
-
-import React from 'react'
-
-export const Artists = (props) => { 
-    const albumArtists = () => {
-        props.item.map((sub) => {
-            return sub.name
-        })
-        .join(", ")
-        .replace(/, ([^,]*)$/, "& $1")
-    }
-
-    return <a 
-        href={props.artistURL} 
-        className='artists' 
-        target="_blank" 
-        rel="noopener noreferrer">
-            {albumArtists()}
-    </a>
-   }
-
-
-
+// export const Artists = (props) => {
+//    return (
+//     <a 
+//         href={props.item.map(artist => artist.external_urls.spotify)} 
+//         className='artists'
+//         target="_blank" 
+//         rel="noopener noreferrer">
+//             {props.href.map(artist => artist.name).join(', ').replace(/, ([^,]*)$/, " & $1")}
+//     </a>
+//    )}
 
 
 
@@ -73,92 +42,181 @@ export const Artists = (props) => {
 
 //    href={props.artistURL}
 
+// artists.js
+
+
+// import React from 'react'
+
+//    export const Artists = (props) => {
+//       return (
+//        <span><a className='artists' href={props.artistURL}>
+//            {props.artist}
+//        </a></span>
+//       )}
+   
+
+
+
+
+// //   a foreach mapping function to get url and artist name
+
+// const object1 = {
+//   a: 'somestring',
+//   b: 42
+// };
+
+// for (const [key, value] of Object.entries(object1)) {
+//   console.log(`${key}: ${value}`);
+// }
+
+// // expected output:
+// // "a: somestring"
+// // "b: 42"
+// // order is not guaranteed
+
+// then we need to print the artist w/ corresponding url and then add logic for , or & 
+
+
+
+// import React from 'react'
+
+// export const Artists = (props) => { 
+//     const albumArtists = () => {
+//         props.item.map((sub) => {
+//             return sub.name
+//         })
+//         .join(", ")
+//         .replace(/, ([^,]*)$/, "& $1")
+//     }
+
+//     return <a 
+//         href={props.artistURL} 
+//         className='artists' 
+//         target="_blank" 
+//         rel="noopener noreferrer">
+//             {albumArtists()}
+//     </a>
+//    }
 
 
 
 
 
 
-// Logic:
-// if in the last position of array: print artist's name
-// if index 2 contains something: seperate each artist by , 
-// if  index 1 of artist array then print artist names seperated by &
+// //    
 
-array variable = items
+// // import React from 'react'
 
-const addSeperator = (item, i) => {
-  if ( i == item.length -1 ) && ( i != item[2] )
+// // export const Artists = (props) => {
+// //     const artistList = () => {
+        
+// //         return props.artists.map((object) => {
+// //             return object.name
+// //         })
+// //         .join(", ")
+// //         .replace(/, ([^,]*)$/, "& $1")
+// //     }
+// //    return (
+// //        <div className='artistContainer'>
+// //            <a 
+// //             className='artists'
+// //             href="#"
+// //             target="_blank" 
+// //             rel="noopener noreferrer">
+// //                 {artistList()}
+// //             </a>
+// //        </div>
+// //    )}
+
+
+// //    href={props.artistURL}
+
+
+
+
+
+
+
+// // Logic:
+// // if in the last position of array: print artist's name
+// // if index 2 contains something: seperate each artist by , 
+// // if  index 1 of artist array then print artist names seperated by &
+
+// array variable = items
+
+// const addSeperator = (item, i) => {
+//   if ( i == item.length -1 ) && ( i != item[2] )
   
-  {
-    return `${items[0] }`
-  }
+//   {
+//     return `${items[0] }`
+//   }
   
   
   
-  if ( === undefined) {
-    return `${items[0]}`
-  }
-}
+//   if ( === undefined) {
+//     return `${items[0]}`
+//   }
+// }
 
 
 
-from Maks:
-[1, 2, 3, 4, 5].forEach((item, i) => {
-    if (i === item.length -1 {
-        ' & '
-    })
-})
+// from Maks:
+// [1, 2, 3, 4, 5].forEach((item, i) => {
+//     if (i === item.length -1 {
+//         ' & '
+//     })
+// })
 
 
-function commaOrAmpersand(props) {
-  const 
-    logic = a => a.concat(a.splice(-2, 2).join(' & ')).join(', '),
-    beatles = { guitar2:'John', bass:'Paul', drums: 'Ringo', guitar1: 'George' }
+// function commaOrAmpersand(props) {
+//   const 
+//     logic = a => a.concat(a.splice(-2, 2).join(' & ')).join(', '),
+//     beatles = { guitar2:'John', bass:'Paul', drums: 'Ringo', guitar1: 'George' }
   
-  return logic(Object
-    .entries(props)
-    .filter(([, v]) => v)
-    .map(([w]) => beatles[w])
-              )
-}
+//   return logic(Object
+//     .entries(props)
+//     .filter(([, v]) => v)
+//     .map(([w]) => beatles[w])
+//               )
+// }
 
-console.log(commaOrAmpersand({ guitar1: true, guitar2: false, drums: false, bass: false }))
-console.log(commaOrAmpersand({ guitar1: true, guitar2: true, drums: false, bass: false }))
-console.log(commaOrAmpersand({ guitar1: true, guitar2: true, drums: true, bass: false }))
-
-
-
-from unit tests
-
-export const firstLast = (items) => {
-  if (items[0] === undefined) {
-    return 'No items!'
-  } else if (items[1] === undefined) {
-    return `Only item: ${items[0]}`
-  } { 
-  return `First: ${items[0]}, Last: ${items[items.length -1]}`
-}}
+// console.log(commaOrAmpersand({ guitar1: true, guitar2: false, drums: false, bass: false }))
+// console.log(commaOrAmpersand({ guitar1: true, guitar2: true, drums: false, bass: false }))
+// console.log(commaOrAmpersand({ guitar1: true, guitar2: true, drums: true, bass: false }))
 
 
-import { firstLast } from './2-first-last'
 
-describe('2-first-last', () => {
-  it('should return the first and last items from an array with two items', () => {
-    expect(firstLast(['a', 'b'])).toEqual('First: a, Last: b')
-  })
+// from unit tests
 
-  it('should return the first and last items from an array with many items', () => {
-    expect(firstLast(['a', 'b', 'c', 'd', 'e'])).toEqual('First: a, Last: e')
-  })
+// export const firstLast = (items) => {
+//   if (items[0] === undefined) {
+//     return 'No items!'
+//   } else if (items[1] === undefined) {
+//     return `Only item: ${items[0]}`
+//   } { 
+//   return `First: ${items[0]}, Last: ${items[items.length -1]}`
+// }}
 
-  it('Should only return the first item if the array only has one item', () => {
-    expect(firstLast(['bob'])).toEqual('Only item: bob')
-  })
 
-  it('Should return "No items!" if the array is empty', () => {
-    expect(firstLast([])).toEqual('No items!')
-  })
-})
+// import { firstLast } from './2-first-last'
+
+// describe('2-first-last', () => {
+//   it('should return the first and last items from an array with two items', () => {
+//     expect(firstLast(['a', 'b'])).toEqual('First: a, Last: b')
+//   })
+
+//   it('should return the first and last items from an array with many items', () => {
+//     expect(firstLast(['a', 'b', 'c', 'd', 'e'])).toEqual('First: a, Last: e')
+//   })
+
+//   it('Should only return the first item if the array only has one item', () => {
+//     expect(firstLast(['bob'])).toEqual('Only item: bob')
+//   })
+
+//   it('Should return "No items!" if the array is empty', () => {
+//     expect(firstLast([])).toEqual('No items!')
+//   })
+// })
 
 
 {/* 
@@ -208,3 +266,79 @@ export const Artists = (props) => {
 
 
 */}
+
+
+// :: other version of App
+
+
+
+// import { AlbumArt } from './AlbumArt.js'
+// import { Artists } from './Artists.js'
+// import { AlbumTitle } from './AlbumTitle.js'
+
+
+// export const App = () => {
+//   return (
+//     <div className='sectionContainer'>
+//       <Header />
+//         <section className='rows'>
+//         {data.albums.items.map((album) => {
+//           return (
+//             <div className='albumContainer'>
+//               <AlbumArt
+//                 key={album.id}
+//                 url={album.images[0].url}
+//               />
+//               <AlbumTitle 
+//                 key={album.name}
+//                 albumName={album.name}
+//                 albumURL={album.external_urls.spotify}
+//               />
+//               <div className='artistContainer'>
+//                   {album.artists.map((sub, subindex) =>
+//                     <Artists 
+//                       key={subindex} artist={sub.name} artistURL={sub.external_urls.spotify}
+//                     />
+//                   )}
+//                 </div>
+//               </div>
+//           )})}
+//       </section>
+//   </div>
+// )}
+
+// :: other version of AlbumContainer
+
+// export const AlbumContainer = () => {
+//   return (
+//     <div className='albumContainer'>
+//     <AlbumArt />,
+//     <AlbumTitle />,
+//     <div className='artistContainer'>
+//       <Artists />
+//     </div>
+//     </div>
+//   )
+// }
+
+
+// import React from 'react'
+// import { AlbumArt } from './AlbumArt.js'
+// import { Artists } from './Artists.js'
+// import { AlbumTitle } from './AlbumTitle.js'
+
+
+// export const AlbumContainer = () => {
+//   return (
+//     <div className='albumContainer'>
+//     <AlbumArt />,
+//     <AlbumTitle />,
+//     <div className='artistContainer'>
+//         {album.artists.map((sub, subindex) =>
+//           <Artists key={subindex} artist={sub.name} artistURL={sub.external_urls.spotify}/>
+//             )}
+//       <Artists />
+//     </div>
+//     </div>
+//   )
+// }

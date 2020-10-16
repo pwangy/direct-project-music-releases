@@ -3,7 +3,7 @@ import React from 'react'
 export const AlbumArt = (props) => {
   return ( 
     <div className="coverContainer">
-        <img src={props.url} alt={props.name} className='albumArt'></img>
+        <img src={props.albumArt} alt={props.name} className='albumArt'></img>
         <div className="opacityLayer"></div>
             <div className="iconContainer">
                 <img src="/icons/heart.svg" alt="heart icon" className="heartIcon"></img>
