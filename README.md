@@ -50,5 +50,6 @@ Describe how you approached to problem, and what tools and techniques you used t
 <!-- - Sort the albums from the singles and create two different sections on your site -->
 <!-- - Incorporate more information from the API response to make your site richer -->
 
+
 ## View it live
-https://goofy-haibt-943dc2.netlify.app/
+Netlify link
