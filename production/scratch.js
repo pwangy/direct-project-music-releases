@@ -1,3 +1,9 @@
+{/* <Artists
+          item={item}  
+          key={item.id}
+          artistURL={item.artistURL}
+          artistName={item.name}   */}
+
 // artists.js
 // import React from 'react'
 

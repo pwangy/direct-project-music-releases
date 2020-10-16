@@ -1,8 +1,7 @@
 import React from 'react'
 import { AlbumArt } from './AlbumArt.js'
-import { Artists } from './Artists.js'
 import { AlbumTitle } from './AlbumTitle.js'
-
+import { Artists } from './Artists.js'
 
 export const AlbumContainer = (props) => (
   <div className='albumContainer'>
@@ -22,6 +21,8 @@ export const AlbumContainer = (props) => (
           <Artists 
             key={item.id}
             item={item}
+            artistURL={props.artistURL} 
+            artist={props.artist}
           />
         )
       })}
