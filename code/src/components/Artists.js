@@ -40,3 +40,16 @@ export const Artists = (props) => {
 
 
 //    href={props.artistURL}
+
+// artists.js
+
+
+// import React from 'react'
+
+//    export const Artists = (props) => {
+//       return (
+//        <span><a className='artists' href={props.artistURL}>
+//            {props.artist}
+//        </a></span>
+//       )}
+   
