@@ -1,5 +1,6 @@
 import React from 'react'
 
+//Component to show every artist and its URL
 export const Artists = (props) => {
    return (
     <span><a className='artists' href={props.artistURL}>
@@ -8,14 +9,4 @@ export const Artists = (props) => {
    )}
 
 
-   {/* 
-
-export const Artists = (props) => {
-   return (
-    <a className='artists' href={props.artistURL}>
-        {props.artist}
-    </a>
-   )}
-
-
-*/}
+   

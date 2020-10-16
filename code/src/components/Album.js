@@ -1,17 +1,18 @@
 import React from 'react'
 
+//Component for each album card
 export const Albums = (props) => {
   return ( 
-    <div className="coverContainer">
-        <img src={props.url} alt={props.name} className='albumArt'></img>
-        <div className="opacityLayer"></div>
-            <div className="iconContainer">
-                <img src="/icons/heart.svg" alt="heart icon" className="heartIcon"></img>
-                <div className="playContainer">
-                  <img src="/icons/play.svg" alt="play button" className="playButton"></img>
-                  <div className="playOverlay"></div>
+    <div className="cover-container">
+        <img src={props.url} alt={props.name} className='album-art'></img>
+        <div className="opacity-layer"></div>
+            <div className="icon-container">
+                <img src="/icons/heart.svg" alt="heart icon" className="heart-icon"></img>
+                <div className="play-container">
+                  <img src="/icons/play.svg" alt="play button" className="play-button"></img>
+                  <div className="play-overlay"></div>
                 </div>
-                <img src="/icons/dots.svg" alt="ellipsis icon" className="ellipsisIcon"></img>
+                <img src="/icons/dots.svg" alt="ellipsis icon" className="ellipsis-icon"></img>
             </div>
         </div>
   )}

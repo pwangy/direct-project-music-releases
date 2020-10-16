@@ -28,14 +28,14 @@ body {
   background: #333;
 }
 
-.albumContainer {
+.album-container {
   padding-bottom: 30px;
   display: flex;
   flex-flow: column nowrap;
 }
 
 /* Album art */
-.coverContainer {
+.cover-container {
   margin-top: 20px;
   width: 300px;
   height: 300px;
@@ -43,11 +43,11 @@ body {
   position: relative;
 }
 
-.albumArt {
+.album-art {
   height: 300px;
 }
 
-.opacityLayer {
+.opacity-layer {
   width: 100%;
   height: 100%;
   top: 0;
@@ -57,13 +57,13 @@ body {
   transition: 0.5s ease;
 }
 
-.coverContainer:hover .opacityLayer {
+.cover-container:hover .opacity-layer {
   background: rgba(0, 0, 0, .5);
   display: block;
 }
 
 /* Album icons on hover */
-.iconContainer {
+.icon-container {
   width: 300px;
   height: 300px;
   top: 0;
@@ -75,23 +75,23 @@ body {
   opacity: 0;
 }
 
-.iconContainer:hover {
+.icon-container:hover {
   opacity: 1;
 }
 
-.heartIcon {
+.heart-icon {
   height: 25px;
   width: 25px;
   filter: invert(93%) sepia(93%) saturate(28%) hue-rotate(21deg) brightness(105%) contrast(108%);
 }
 
-.ellipsisIcon {
+.ellipsis-icon {
   height: 25px;
   width: 25px;
   filter: invert(93%) sepia(93%) saturate(28%) hue-rotate(21deg) brightness(105%) contrast(108%);
 }
 
-.playContainer {
+.play-container {
   width: 150px;
   height: 150px;
   display: flex;
@@ -99,14 +99,14 @@ body {
   align-items: center;
 }
 
-.playButton {
+.play-button {
   height: 75px;
   width: 75px;
   transition: 0.2s;
   filter: invert(93%) sepia(93%) saturate(28%) hue-rotate(21deg) brightness(105%) contrast(108%); 
 }
 
-.playOverlay {
+.play-overlay {
   margin-left: -69px;
   height: 65px;
   width: 65px;
@@ -117,7 +117,7 @@ body {
   display: block;
 }
   
-.playButton:hover {
+.play-button:hover {
   height: 78px;
   width: 78px;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 /* Artist */
-.artistContainer {
+.artist-container {
   max-width: 300px;
   text-align: left;
   display: flex;
@@ -167,7 +167,7 @@ body {
 
 /* Media queries */
 @media (min-width: 768px) {  
-  .sectionContainer {
+  .section-container {
     width: 620px;
     display: flex;
     flex-direction: column;
@@ -179,21 +179,21 @@ body {
     gap: 0 20px;
   }
 
-  .albumContainer {
+  .album-container {
     align-self: flex-start;
   }
 }
 
 /* Large tablet */
 @media (min-width: 992px) {
-  .sectionContainer {
+  .section-container {
     width: 940px;
   }
 }
 
 /* Desktop */
 @media (min-width: 1200px) {
-  .sectionContainer {
+  .section-container {
     width: 1260px;
   }
 }
