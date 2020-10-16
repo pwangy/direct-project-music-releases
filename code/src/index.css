@@ -1,13 +1,199 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  margin-top: 0;
+  padding-bottom: 50px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background: #191414;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Section header */
+.header {
+  margin-top: 16px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.hairline {
+  margin-top: 8px;
+  height: 0.5px;
+  width: 100%;
+  background: #333;
+}
+
+.albumContainer {
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* Album art */
+.coverContainer {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  left: 0;
+  position: relative;
+}
+
+.albumArt {
+  height: 300px;
+}
+
+.opacityLayer {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s ease;
+}
+
+.coverContainer:hover .opacityLayer {
+  background: rgba(0, 0, 0, .5);
+  display: block;
+}
+
+/* Album icons on hover */
+.iconContainer {
+  width: 300px;
+  height: 300px;
+  top: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.iconContainer:hover {
+  opacity: 1;
+}
+
+.heartIcon {
+  height: 25px;
+  width: 25px;
+  filter: invert(93%) sepia(93%) saturate(28%) hue-rotate(21deg) brightness(105%) contrast(108%);
+}
+
+.ellipsisIcon {
+  height: 25px;
+  width: 25px;
+  filter: invert(93%) sepia(93%) saturate(28%) hue-rotate(21deg) brightness(105%) contrast(108%);
+}
+
+.playContainer {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playButton {
+  height: 75px;
+  width: 75px;
+  transition: 0.2s;
+  filter: invert(93%) sepia(93%) saturate(28%) hue-rotate(21deg) brightness(105%) contrast(108%); 
+}
+
+.playOverlay {
+  margin-left: -69px;
+  height: 65px;
+  width: 65px;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: block;
+}
+  
+.playButton:hover {
+  height: 78px;
+  width: 78px;
+}
+
+/* Album title */
+.title {
+  margin: 6px 0;
+  width: 300px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+/* Artist */
+.artistContainer {
+  max-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.artists {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  font-weight: 700;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artists:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.artists + .artists::before {
+  white-space: pre;
+  content: ", ";
+}
+
+/* Media queries */
+@media (min-width: 768px) {  
+  .sectionContainer {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rows {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0 20px;
+  }
+
+  .albumContainer {
+    align-self: flex-start;
+  }
+}
+
+/* Large tablet */
+@media (min-width: 992px) {
+  .sectionContainer {
+    width: 940px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .sectionContainer {
+    width: 1260px;
+  }
 }
